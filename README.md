@@ -9,7 +9,7 @@ Modeling and Dynamic Optimization". It includes complete training, validation, a
 
 ## 📌 Overview
 
-![Overview](J:\IDO\Overview.png)We propose IDO, an Instance-level Difficulty Modeling and Dynamic Optimization framework to achieve robust learning over noisy training data. Rather than relying on hyperparameters to regularize different terms in the loss function, IDO designs a dynamically weighted loss function that captures both the cleanliness and difficulty of each individual sample.
+![Overview](Overview.png)We propose IDO, an Instance-level Difficulty Modeling and Dynamic Optimization framework to achieve robust learning over noisy training data. Rather than relying on hyperparameters to regularize different terms in the loss function, IDO designs a dynamically weighted loss function that captures both the cleanliness and difficulty of each individual sample.
 This enables instance-level optimization without introducing any additional hyperparameter.
 
 ## 🚀 Key Features
