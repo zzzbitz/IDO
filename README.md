@@ -4,8 +4,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-orange)](https://pytorch.org/)
 
-This repository is the official implementation of the paper "[Handling Label Noise via Instance-Level Difficulty
-Modeling and Dynamic Optimization]". It includes complete training, validation, and inference pipelines.
+This repository is the official implementation of the paper "Handling Label Noise via Instance-Level Difficulty
+Modeling and Dynamic Optimization". It includes complete training, validation, and inference pipelines.
 
 ## 📌 Overview
 
