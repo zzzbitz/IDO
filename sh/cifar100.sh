@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the output directory
-OUTPUT_DIR="/mnt/lustre/zk/ICML2025/IDO" # change to your code path
+OUTPUT_DIR="" # change to your code path
 CHECKPOINT_DIR="${OUTPUT_DIR}/checkpoint/IDO_resnet50_cifar100"
 
 # Create the output and checkpoint directories if they do not exist
