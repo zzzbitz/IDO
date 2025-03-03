@@ -25,16 +25,16 @@ class ResNet50(nn.Module):
             raise ValueError("please check the value of stage, it should be 1 or 2" )
         
     def forward(self, x):
-        features_list = self.model(x)  # features_list 是一个包含多个特征图的列表
-        features = features_list[-1]   # 提取最后一个阶段的特征图，形状为 [batch_size, 2048, 7, 7]
+        features_list = self.model(x)  
+        features = features_list[-1]   
         
-        # 全局平均池化，将特征图转换为 [batch_size, 2048, 1, 1]
+
         features = F.adaptive_avg_pool2d(features, (1, 1))
         
-        # 展平成 [batch_size, 2048]
+        
         features = features.view(features.size(0), -1)
         
-        # 全连接层
+      
         logits = self.fc(features)
         
         return features, logits
@@ -46,6 +46,6 @@ class ResNet50(nn.Module):
 
 if __name__ == '__main__':
     cfg.defrost()
-    cfg.merge_from_file("/mnt/lustre/zhonghuaping.p/zhangkuan/KDD2025/OtherPaperCode/IDO/config/Stage_2/cifar100.yaml")
+    cfg.merge_from_file("./config/Stage_2/cifar100.yaml")
     model = ResNet50(cfg)
     print(model)
