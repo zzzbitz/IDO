@@ -103,7 +103,7 @@ def draw_wrong_event(cfg, wrong_event):
     plt.show()
     
 if __name__ == '__main__':
-    wrong_event = torch.load('/mnt/lustre/zhonghuaping.p/zhangkuan/KDD2025/OtherPaperCode/IDO/stage1/resnet50_pretrained_cifar100_sym_0.2_wrongevent.pt')
+    wrong_event = torch.load('./stage1/resnet50_pretrained_cifar100_sym_0.2_wrongevent.pt')
     bmm_model = BetaMixtureModel()
     bmm_model.fit(wrong_event, max_iter=10)
     bmm_model.print_beta()
