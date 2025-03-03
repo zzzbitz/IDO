@@ -26,10 +26,10 @@ class ConvNeXtB(nn.Module):
 
     def forward(self, x):
         features = self.model(x)[-1]
-        # 全局平均池化，将特征图转换为 [batch_size, 2048, 1, 1]
+        
         features = F.adaptive_avg_pool2d(features, (1, 1))
         
-        # 展平成 [batch_size, 2048]
+        
         features = features.view(features.size(0), -1)
         logits = self.fc(features)
         return features, logits
@@ -40,6 +40,6 @@ class ConvNeXtB(nn.Module):
 
 if __name__ == '__main__':
     cfg.defrost()
-    cfg.merge_from_file("/mnt/lustre/zhonghuaping.p/zhangkuan/KDD2025/OtherPaperCode/IDO/config/Stage_2/cifar100.yaml")
+    cfg.merge_from_file("./config/Stage_2/cifar100.yaml")
     model = ConvNeXtB(cfg)
     print(model)
