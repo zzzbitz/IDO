@@ -3,7 +3,7 @@ import torch.nn as nn
 import timm
 import sys
 import os
-# 将utils文件夹添加到sys.path
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'utils')))
 from config import _C as cfg
 
@@ -12,9 +12,9 @@ class ViTBase16(nn.Module):
         super(ViTBase16, self).__init__()
         self.stage = cfg.stage
         print(f'Loading ViT Base 16, pretrained:{cfg.pretrained}, stage:{cfg.stage}, num_class:{cfg.num_class}')
-        # 设置 num_classes=0 以去除原始的分类头
+        
         self.model = timm.create_model('vit_base_patch16_224', pretrained=cfg.pretrained, num_classes=0)
-        # 添加新的全连接层
+        
         self.fc = nn.Linear(768, cfg.num_class)
         if cfg.stage == 1:
             self.freeze(cfg.frozen)
@@ -26,8 +26,8 @@ class ViTBase16(nn.Module):
             raise ValueError("Please check the value of stage, it should be 1 or 2")
     
     def forward(self, x):
-        features = self.model(x)  # 输出特征
-        logits = self.fc(features)  # 新的分类层
+        features = self.model(x)  
+        logits = self.fc(features)  
         return features, logits
     
     def freeze(self, freeze=False):
@@ -36,6 +36,6 @@ class ViTBase16(nn.Module):
 
 if __name__ == '__main__':
     cfg.defrost()
-    cfg.merge_from_file("/mnt/lustre/zhonghuaping.p/zhangkuan/KDD2025/OtherPaperCode/IDO/config/Stage_2/cifar100.yaml")
+    cfg.merge_from_file("./config/Stage_2/cifar100.yaml")
     model = ViTBase16(cfg)
     print(model)
