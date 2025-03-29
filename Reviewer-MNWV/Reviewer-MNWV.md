@@ -14,13 +14,11 @@
 | --------- | -------------- | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Standard  | ResNet-50      | 93.2%        | 92.3%        | 88.2%        | 91.1%        | 90.9%        |
 | UNICON    | ResNet-50      | 94.8%        | 93.2%        | 92.5%        | 93.5%        | 93.9%        |
-| ELR       | ResNet-50      | 96.5%        | 95.8%        | 95.1%        | <u>95.2%</u> | 94.8%        |
-| DeFT      | CLIP-ResNet-50 | 96.9%        | <u>96.6%</u> | 95.7%        | 93.8%        | 95.1%        |
-| DivideMix | ResNet-50      | <u>97.1%</u> | **96.9%**    | <u>96.3%</u> | 93.1%        | 96.0%        |
+| ELR       | ResNet-50      | 96.5%        | 95.8%        | 95.1%        | ~95.2%~ | 94.8%        |
+| DeFT      | CLIP-ResNet-50 | 96.9%        |~96.6%~ | 95.7%        | 93.8%        | 95.1%        |
+| DivideMix | ResNet-50      | ~97.1%~ | **96.9%**    | ~96.3%~ | 93.1%        | 96.0%        |
 | DISC      | ResNet-50      | 96.8%        | 96.5%        | 95.5%        | 95.1%        | **96.5%**    |
-| IDO       | ResNet-50      | **97.3%**    | **96.9%**    | **96.5%**    | **95.3%**    | <u>96.4%</u> |
+| IDO       | ResNet-50      | **97.3%**    | **96.9%**    | **96.5%**    | **95.3%**    | ~96.4%~ |
 
-<center>Table 2. The results of Standard, UNICON, ELR, DeFT, DivideMix, and IDO on CIFAR-10 with five different noise levels. The experiment setting is followed CIFAR-100 setting in our paper. The experiment was performed on a single A100 80GB, repeated 5 times</center>
-
-
+<center>Table 2. The results of Standard, UNICON, ELR, DeFT, DivideMix, and IDO on CIFAR-10 with five different noise levels. The experiment setting is followed CIFAR-100 setting in our paper. The bold result is the best one, while the result with a line is the second best one. The experiment was performed on a single A100 80GB, repeated 5 times</center>
 
