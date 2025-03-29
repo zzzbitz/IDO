@@ -1,3 +1,7 @@
+## 📊 Figures and Tables
+
+### Table 1
+
 | Method    | Architecture | Accuracy±std   | Time per Epoch |
 | --------- | ------------ | -------------- | -------------- |
 | DivideMix | ResNet-50    | 74.59±0.55     | 717s           |
@@ -5,7 +9,7 @@
 
 <center>Table 1. The results of DivideMix and IDO with the setting of pre-trained ResNet50, with SGD, lr = 2e-3, weight_decay = 1e-3, momentum=0.9, batch_size=64. One epoch has 1000 iterations, and 100 epochs are trained. We set stage 1 lasts 2 epochs, stage 2 lasts 98 epochs. The experiment was performed on a single A100 80GB, repeated 5 times</center>
 
-
+### Table 2
 | Noise     | Architecture   | Sym. 20%     | Sym. 40%     | Sym. 60%     | Asym. 40%    | Inst. 40%    |
 | --------- | -------------- | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Standard  | ResNet-50      | 93.2%        | 92.3%        | 88.2%        | 91.1%        | 90.9%        |
