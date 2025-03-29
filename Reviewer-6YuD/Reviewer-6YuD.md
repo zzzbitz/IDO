@@ -51,7 +51,7 @@
   </tbody>
 </table>
 
-<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB, repeated 5 times</center>
+<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18, with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.</center>
 
 ### Figure 1
 
@@ -61,7 +61,7 @@
          alt=""
          style=""/>
     <br>		
-    Figure 1. The results of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB.
+    Figure 1. The AUC-ROC curves of loss and wrong event at different training stages. The experiment is conducted under the setting with ResNet18, with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
     </center>
 </div>
 
