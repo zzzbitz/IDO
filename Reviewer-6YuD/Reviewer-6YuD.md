@@ -51,7 +51,7 @@
   </tbody>
 </table>
 
-<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18, with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.</center>
+<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted on CIFAR10 under Sym. 60%, Asym. 40%, Inst. 40%. It is conducted under the setting with ResNet18, with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.</center>
 
 ### Figure 1
 
@@ -61,7 +61,7 @@
          alt=""
          style=""/>
     <br>		
-    Figure 1. The AUC-ROC curves of loss and wrong event at different training stages. The experiment is conducted under the setting with ResNet18, with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
+    Figure 1. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 20 epochs, 60 epochs, 100 epochs. The experiment is conducted under the setting with ResNet18, with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
     </center>
 </div>
 
