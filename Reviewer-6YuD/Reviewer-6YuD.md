@@ -51,7 +51,7 @@
   </tbody>
 </table>
 
-<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%, Asym. 40%, Inst. 40%. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.</center>
+Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%, Asym. 40%, Inst. 40%. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
 
 ### Table 2
 
@@ -104,7 +104,7 @@
   </tbody>
 </table>
 
-<center>Table 2. The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR100 under Sym. 60%, Asym. 40%, Inst. 40%. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.</center>
+Table 2. The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR100 under Sym. 60%, Asym. 40%, Inst. 40%. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
 
 ### Figure 1
 
