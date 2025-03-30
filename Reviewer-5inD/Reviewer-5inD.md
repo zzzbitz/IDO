@@ -51,7 +51,7 @@
   </tbody>
 </table>
 
-<center>Table 1. The AUC values Loss and Wrong Event. The experiment is conducted under the setting with ResNet18 on CIFAR-10 under three noise settings, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB, repeated 5 times</center>
+<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%, Asym. 40%, Inst. 40%. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. The experiment was performed on a single A100 80GB, repeated 5 times.</center>
 
 ### Figure 1
 
@@ -61,7 +61,7 @@
          alt=""
          style=""/>
     <br>		
-    Figure 1. The results of Loss, Wrong Event and Random. The experiment is conducted under the setting with ResNet-18 on CIFAR-10 with Inst. 40%, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB.
+    Figure 1. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 20 epochs, 60 epochs, 100 epochs. The experiment is conducted under the setting with pretrained ResNet18 on CIFAR-10 Inst. 40% noise.The AUC-ROC (Area Under the Receiver Operating Characteristic Curve) metric evaluates the classifier's ability to distinguish between classes. A higher AUC value indicates better classification performance, as it balances the trade-off between true positive rate (recall) and false positive rate across various thresholds. The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
     </center>
 </div>
 
@@ -122,3 +122,110 @@
 </table>
 
 <center>Table 3. The results of M-Correction(BMM), DivideMix(GMM), IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB, repeated 5 times</center>
+
+
+### Table 4
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th rowspan="2">Threshold</th>
+      <th colspan="3">0.2</th>
+      <th colspan="3">0.5</th>
+      <th colspan="3">0.8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Epoch</td>
+      <td>5</td>
+      <td>20</td>
+      <td>30</td>
+      <td>5</td>
+      <td>20</td>
+      <td>30</td>
+      <td>5</td>
+      <td>20</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Loss</td>
+      <td>0.49(0.62 0.41)</td>
+      <td>0.38(0.76 0.25)</td>
+      <td>0.29(0.79 0.18)</td>
+      <td>0.34(0.71 0.23)</td>
+      <td>0.29(0.79, 0.18)</td>
+      <td>0.20(0.75 0.11)</td>
+      <td>0.00(0.92 0.00)</td>
+      <td>0.00(0.90 0.00)</td>
+      <td>0.00(0.60 0.00)</td>
+    </tr>
+    <tr>
+      <td>Wrong Event</td>
+      <td>0.60(0.43 0.99)</td>
+      <td>0.67(0.51 0.99)</td>
+      <td>0.70(0.54 0.99)</td>
+      <td>0.63(0.46 0.99)</td>
+      <td>0.70(0.54 0.99)</td>
+      <td>0.72(0.56 0.99)</td>
+      <td>0.70(0.63 0.77)</td>
+      <td>0.79(0.88 0.71)</td>
+      <td>0.76(0.93 0.65)</td>
+    </tr>
+  </tbody>
+</table>
+
+<center>Table 4. The precision, recall, F-score of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Inst. 40%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. The experiment was performed on a single A100 80GB, repeated 5 times.</center>
+
+### Table 4
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th rowspan="2">Threshold</th>
+      <th colspan="3">0.2</th>
+      <th colspan="3">0.5</th>
+      <th colspan="3">0.8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Epoch</td>
+      <td>10</td>
+      <td>30</td>
+      <td>60</td>
+      <td>10</td>
+      <td>30</td>
+      <td>60</td>
+      <td>10</td>
+      <td>30</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Loss</td>
+      <td>0.77(0.63 1.00)</td>
+      <td>0.84(0.75 0.96)</td>
+      <td>0.56(0.41 0.87)</td>
+      <td>0.87(0.90 0.84)</td>
+      <td>0.61(0.97 0.45)</td>
+      <td>0.04(0.94 0.02)</td>
+      <td>0.05(1.00 0.02)</td>
+      <td>0.01(1.00 0.00)</td>
+      <td>0.00(1.00 0.00)</td>
+    </tr>
+    <tr>
+      <td>Wrong Event</td>
+      <td>0.76(0.62 1.00)</td>
+      <td>0.85(0.76 0.97)</td>
+      <td>0.84(0.74 0.99)</td>
+      <td>0.85(0.73 0.99)</td>
+      <td>0.90(0.83 0.98)</td>
+      <td>0.92(0.89 0.96)</td>
+      <td>0.87(0.83 0.93)</td>
+      <td>0.92(0.93 0.92)</td>
+      <td>0.88(0.97 0.81)</td>
+    </tr>
+  </tbody>
+</table>
+
+<center>Table 4. The precision, recall, F-score of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. The experiment was performed on a single A100 80GB, repeated 5 times.</center>
