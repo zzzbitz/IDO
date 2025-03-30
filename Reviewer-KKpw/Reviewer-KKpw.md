@@ -4,7 +4,7 @@
 
 ![e67b724c167931bb78a7946a9b4afcc](e67b724c167931bb78a7946a9b4afcc.png)
 
-<center>Figure 1. The results of Ranks Changes Extremes of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18 on CIFAR-10 with Sym. 60%. By sorting samples based on metrics, we can better understand how loss and WE evolve, avoiding unfair comparisons due to numerical size differences. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+Figure 1. The results of Ranks Changes Extremes of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18 on CIFAR-10 with Sym. 60%. By sorting samples based on metrics, we can better understand how loss and WE evolve, avoiding unfair comparisons due to numerical size differences. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
 
 ### Table 1
 
@@ -56,13 +56,13 @@
     </tr>
   </tbody>
 </table>
-<center>Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with pre-trained ResNet50 on CIFAR-100 under three noise settings. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with pre-trained ResNet50 on CIFAR-100 under three noise settings. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
 
 ### Figure 2
 
 ![image-20250329160530629](image-20250329160530629.png)
 
-<center>Figure 2. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 5 epochs, 15 epochs, 25 epochs. The experiment is conducted under the setting with pretrained ResNet18 on CIFAR-10 Inst. 40% noise.The AUC-ROC (Area Under the Receiver Operating Characteristic Curve) metric evaluates the classifier's ability to distinguish between classes. A higher AUC value indicates better classification performance, as it balances the trade-off between true positive rate (recall) and false positive rate across various thresholds. The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
+Figure 2. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 5 epochs, 15 epochs, 25 epochs. The experiment is conducted under the setting with pretrained ResNet18 on CIFAR-10 Inst. 40% noise.The AUC-ROC (Area Under the Receiver Operating Characteristic Curve) metric evaluates the classifier's ability to distinguish between classes. A higher AUC value indicates better classification performance, as it balances the trade-off between true positive rate (recall) and false positive rate across various thresholds. The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. 
 
 ### Table 2
 
@@ -73,7 +73,7 @@
 | Accumulated Loss + BMM | 80.1     | 75.9      | 77.1      |
 | Wrong event + BMM      | **80.8**     | **78.0**      | **82.9**      |
 
-<center>Table2. The results of single loss, accumulated loss and wrong event with GMM and BMM. The experiment is conducted under the setting with ResNet-18 on CIFAR-10 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+Table2. The results of single loss, accumulated loss and wrong event with GMM and BMM. The experiment is conducted under the setting with ResNet-18 on CIFAR-10 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
 
 ### Table 3
 
@@ -82,7 +82,7 @@
 | Initial Model | 80.1     | 77.1      | 83.3      |
 | Base Model    | **81.3**     | **77.6**      | **83.8**      |
 
-<center>Table3. The results of Initial Model and Base Model. The experiment is conducted under the setting with ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+Table3. The results of Initial Model and Base Model. The experiment is conducted under the setting with ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
 
 ### Table 4
 
@@ -104,4 +104,4 @@ Table4. The results of weighting term $\epsilon(\cdot)$ for loss $\mathcal{L_{SI
 | Wrong event + Total BMM | 80.3     | 75.7      | 81.5      |
 | Wrong event + Class BMM | **81.2**     | **78.3**      | **83.2**      |
 
-<center>Table5. The results of loss and wrong event with Total BMM and Class BMM. The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+Table5. The results of loss and wrong event with Total BMM and Class BMM. The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
