@@ -92,7 +92,7 @@
 | Fixed $$\epsilon(\cdot)$$ =1   | 80.3     | 76.8      | 82.8      |
 | Dynamic $$\epsilon(\cdot)$$   | **81.1**     | **77.5**      | **83.7**      |
 
-<center>Table4. The results of weighting term $\epsilon(\cdot)$ for loss $\mathcal{L_{SIM}}$. The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+<center>Table4. The results of weighting term $$\epsilon(\cdot)$$ for loss $$\mathcal{L_{SIM}}$$. The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
 
 ### Table 5
 
