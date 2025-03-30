@@ -62,7 +62,7 @@
 
 ![image-20250329160530629](image-20250329160530629.png)
 
-<center>Figure 2. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 20 epochs, 60 epochs, 100 epochs. The experiment is conducted under the setting with pretrained ResNet18 on CIFAR-10 Inst. 40% noise.The AUC-ROC (Area Under the Receiver Operating Characteristic Curve) metric evaluates the classifier's ability to distinguish between classes. A higher AUC value indicates better classification performance, as it balances the trade-off between true positive rate (recall) and false positive rate across various thresholds. The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
+<center>Figure 2. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 5 epochs, 15 epochs, 25 epochs. The experiment is conducted under the setting with pretrained ResNet18 on CIFAR-10 Inst. 40% noise.The AUC-ROC (Area Under the Receiver Operating Characteristic Curve) metric evaluates the classifier's ability to distinguish between classes. A higher AUC value indicates better classification performance, as it balances the trade-off between true positive rate (recall) and false positive rate across various thresholds. The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
 
 ### Table 2
 
