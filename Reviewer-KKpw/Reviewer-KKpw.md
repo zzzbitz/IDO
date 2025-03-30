@@ -4,7 +4,7 @@
 
 ![e67b724c167931bb78a7946a9b4afcc](e67b724c167931bb78a7946a9b4afcc.png)
 
-<center>Figure 1. The results of Ranks Changes Extremes of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18 on CIFAR-10 with Sym. 60%. The rank changes of loss and WE reflect significant fluctuations, especially due to hard samples, while weight changes become more stable over time as training progresses. By sorting samples based on metrics, we can better understand how loss and WE evolve, avoiding unfair comparisons due to numerical size differences. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+<center>Figure 1. The results of Ranks Changes Extremes of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18 on CIFAR-10 with Sym. 60%. By sorting samples based on metrics, we can better understand how loss and WE evolve, avoiding unfair comparisons due to numerical size differences. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
 
 ### Table 1
 
