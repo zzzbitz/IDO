@@ -22,6 +22,7 @@
       <th colspan="3">Sym. 60%</th>
       <th colspan="3">Asym. 40%</th>
       <th colspan="3">Inst. 40%</th>
+      <th rowspan="4">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -36,6 +37,9 @@
       <td>5</td>
       <td>15</td>
       <td>25</td>
+      <td rowspan="4">
+        The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with pre-trained ResNet50 on CIFAR-100 under three noise settings. <br> We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. <br> The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+      </td>
     </tr>
     <tr>
       <td>Loss</td>
@@ -63,7 +67,7 @@
     </tr>
   </tbody>
 </table>
-Table 1. The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with pre-trained ResNet50 on CIFAR-100 under three noise settings. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
+
 
 ### Figure 2
 
@@ -73,42 +77,158 @@ Figure 2. The AUC-ROC curves of loss and wrong event at early, midterm, later tr
 
 ### Table 2
 
-| Noise                  | Sym. 60% | Asym. 40% | Inst. 40% |
-| ---------------------- | -------- | --------- | --------- |
-| Single Loss + BMM      | 75.3     | 69.7      | 68.4      |
-| Accumulated Loss + GMM | 79.2     | 74.5      | 75.9      |
-| Accumulated Loss + BMM | 80.1     | 75.9      | 77.1      |
-| Wrong event + BMM      | **80.8**     | **78.0**      | **82.9**      |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Noise</th>
+      <th>Sym. 60%</th>
+      <th>Asym. 40%</th>
+      <th>Inst. 40%</th>
+      <th rowspan="5">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single Loss + BMM</td>
+      <td>75.3</td>
+      <td>69.7</td>
+      <td>68.4</td>
+      <td rowspan="4">
+        The results of single loss, accumulated loss and wrong event with GMM and BMM. <br>The experiment is conducted under the setting with ResNet-18 on CIFAR-10 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+      </td>
+    </tr>
+    <tr>
+      <td>Accumulated Loss + GMM</td>
+      <td>79.2</td>
+      <td>74.5</td>
+      <td>75.9</td>
+    </tr>
+    <tr>
+      <td>Accumulated Loss + BMM</td>
+      <td>80.1</td>
+      <td>75.9</td>
+      <td>77.1</td>
+    </tr>
+    <tr>
+      <td>Wrong event + BMM</td>
+      <td><b>80.8</b></td>
+      <td><b>78.0</b></td>
+      <td><b>82.9</b></td>
+    </tr>
+  </tbody>
+</table>
 
-Table2. The results of single loss, accumulated loss and wrong event with GMM and BMM. The experiment is conducted under the setting with ResNet-18 on CIFAR-10 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
 
 ### Table 3
 
-| Start Model   | Sym. 60% | Asym. 40% | Inst. 40% |
-| ------------- | -------- | --------- | --------- |
-| Initial Model | 80.1     | 77.1      | 83.3      |
-| Base Model    | **81.3**     | **77.6**      | **83.8**      |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Start Model</th>
+      <th>Sym. 60%</th>
+      <th>Asym. 40%</th>
+      <th>Inst. 40%</th>
+      <th rowspan="3">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial Model</td>
+      <td>80.1</td>
+      <td>77.1</td>
+      <td>83.3</td>
+      <td rowspan="2">
+        The results of Initial Model and Base Model. <br>The experiment is conducted under the setting with ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+      </td>
+    </tr>
+    <tr>
+      <td>Base Model</td>
+      <td><b>81.3</b></td>
+      <td><b>77.6</b></td>
+      <td><b>83.8</b></td>
+    </tr>
+  </tbody>
+</table>
 
-Table3. The results of Initial Model and Base Model. The experiment is conducted under the setting with ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
 
 ### Table 4
 
-| $$\epsilon(\cdot)$$          | Sym. 60% | Asym. 40% | Inst. 40% |
-| ---------------------------- | -------- | --------- | --------- |
-| Without $$\epsilon(\cdot)$$ =0 | 78.2     | 70.4      | 77.3      |
-| Fixed $$\epsilon(\cdot)$$ =1   | 80.3     | 76.8      | 82.8      |
-| Dynamic $$\epsilon(\cdot)$$   | **81.1**     | **77.5**      | **83.7**      |
-
-Table4. The results of weighting term $\epsilon(\cdot)$ for loss $\mathcal{L_{SIM}}$. The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>$$\epsilon(\cdot)$$</th>
+      <th>Sym. 60%</th>
+      <th>Asym. 40%</th>
+      <th>Inst. 40%</th>
+      <th rowspan="4">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Without $$\epsilon(\cdot)$$ = 0</td>
+      <td>78.2</td>
+      <td>70.4</td>
+      <td>77.3</td>
+      <td rowspan="3">
+        The results of weighting term $$\epsilon(\cdot)$$ for loss $$\mathcal{L_{SIM}}$$. <br> The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+      </td>
+    </tr>
+    <tr>
+      <td>Fixed $$\epsilon(\cdot)$$ = 1</td>
+      <td>80.3</td>
+      <td>76.8</td>
+      <td>82.8</td>
+    </tr>
+    <tr>
+      <td>Dynamic $$\epsilon(\cdot)$$</td>
+      <td><b>81.1</b></td>
+      <td><b>77.5</b></td>
+      <td><b>83.7</b></td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### Table 5
 
-| Noise                   | Sym. 60% | Asym. 40% | Inst. 40% |
-| ----------------------- | -------- | --------- | --------- |
-| Loss + Total BMM        | 79.9     | 69.9      | 74.6      |
-| Loss + Class BMM        | 80.8     | 76.0      | 79.8      |
-| Wrong event + Total BMM | 80.3     | 75.7      | 81.5      |
-| Wrong event + Class BMM | **81.2**     | **78.3**      | **83.2**      |
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Noise</th>
+      <th>Sym. 60%</th>
+      <th>Asym. 40%</th>
+      <th>Inst. 40%</th>
+      <th rowspan="5">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Loss + Total BMM</td>
+      <td>79.9</td>
+      <td>69.9</td>
+      <td>74.6</td>
+      <td rowspan="4">
+        The results of loss and wrong event with Total BMM and Class BMM. <br>The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+      </td>
+    </tr>
+    <tr>
+      <td>Loss + Class BMM</td>
+      <td>80.8</td>
+      <td>76.0</td>
+      <td>79.8</td>
+    </tr>
+    <tr>
+      <td>Wrong event + Total BMM</td>
+      <td>80.3</td>
+      <td>75.7</td>
+      <td>81.5</td>
+    </tr>
+    <tr>
+      <td>Wrong event + Class BMM</td>
+      <td><b>81.2</b></td>
+      <td><b>78.3</b></td>
+      <td><b>83.2</b></td>
+    </tr>
+  </tbody>
+</table>
 
-Table5. The results of loss and wrong event with Total BMM and Class BMM. The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60% Asym. 40% Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
