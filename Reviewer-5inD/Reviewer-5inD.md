@@ -86,7 +86,7 @@
   </tbody>
 </table>
 
-<center>Table 2. The results of IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+<center>Table 2. The results of IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.  The experiment was performed on a single A100 80GB, repeated 5 times. </center>
 
 ### Table 3
 
@@ -121,7 +121,7 @@
   </tbody>
 </table>
 
-<center>Table 3. The results of M-Correction(BMM), DivideMix(GMM), IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. </center>
+<center>Table 3. The results of M-Correction(BMM), DivideMix(GMM), IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB, repeated 5 times. </center>
 
 
 ### Table 4
@@ -150,32 +150,32 @@
     </tr>
     <tr>
       <td>Loss</td>
-      <td>0.49<br>(0.62 0.41)</td>
-      <td>0.38<br>(0.76 0.25)</td>
-      <td>0.29<br>(0.79 0.18)</td>
-      <td>0.34<br>(0.71 0.23)</td>
-      <td>0.29<br>(0.79, 0.18)</td>
-      <td>0.20<br>(0.75 0.11)</td>
-      <td>0.00<br>(0.92 0.00)</td>
-      <td>0.00<br>(0.90 0.00)</td>
-      <td>0.00<br>(0.60 0.00)</td>
+      <td>0.49<br>0.62 0.41</td>
+      <td>0.38<br>0.76 0.25</td>
+      <td>0.29<br>0.79 0.18</td>
+      <td>0.34<br>0.71 0.23</td>
+      <td>0.29<br>0.79 0.18</td>
+      <td>0.20<br>0.75 0.11</td>
+      <td>0.00<br>0.92 0.00</td>
+      <td>0.00<br>0.90 0.00</td>
+      <td>0.00<br>0.60 0.00</td>
     </tr>
     <tr>
       <td>Wrong Event</td>
-      <td>0.60<br>(0.43 0.99)</td>
-      <td>0.67<br>(0.51 0.99)</td>
-      <td>0.70<br>(0.54 0.99)</td>
-      <td>0.63<br>(0.46 0.99)</td>
-      <td>0.70<br>(0.54 0.99)</td>
-      <td>0.72<br>(0.56 0.99)</td>
-      <td>0.70<br>(0.63 0.77)</td>
-      <td>0.79<br>(0.88 0.71)</td>
-      <td>0.76<br>(0.93 0.65)</td>
+      <td>0.60<br>0.43 0.99</td>
+      <td>0.67<br>0.51 0.99</td>
+      <td>0.70<br>0.54 0.99</td>
+      <td>0.63<br>0.46 0.99</td>
+      <td>0.70<br>0.54 0.99</td>
+      <td>0.72<br>0.56 0.99</td>
+      <td>0.70<br>0.63 0.77</td>
+      <td>0.79<br>0.88 0.71</td>
+      <td>0.76<br>0.93 0.65</td>
     </tr>
   </tbody>
 </table>
 
-<center>Table 4. The precision, recall, F-score of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Inst. 40%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
+<center>Table 4. The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. The experiment is conducted with ResNet18 on CIFAR10 under Inst. 40%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
 
 ### Table 4
 
@@ -203,29 +203,30 @@
     </tr>
     <tr>
       <td>Loss</td>
-      <td>0.77<br>(0.63 1.00)</td>
-      <td>0.84<br>(0.75 0.96)</td>
-      <td>0.56<br>(0.41 0.87)</td>
-      <td>0.87<br>(0.90 0.84)</td>
-      <td>0.61<br>(0.97 0.45)</td>
-      <td>0.04<br>(0.94 0.02)</td>
-      <td>0.05<br>(1.00 0.02)</td>
-      <td>0.01<br>(1.00 0.00)</td>
-      <td>0.00<br>(1.00 0.00)</td>
+      <td>0.77<br>0.63 1.00</td>
+      <td>0.84<br>0.75 0.96</td>
+      <td>0.56<br>0.41 0.87</td>
+      <td>0.87<br>0.90 0.84</td>
+      <td>0.61<br>0.97 0.45</td>
+      <td>0.04<br>0.94 0.02</td>
+      <td>0.05<br>1.00 0.02</td>
+      <td>0.01<br>1.00 0.00</td>
+      <td>0.00<br>1.00 0.00</td>
     </tr>
     <tr>
       <td>Wrong Event</td>
-      <td>0.76<br>(0.62 1.00)</td>
-      <td>0.85<br>(0.76 0.97)</td>
-      <td>0.84<br>(0.74 0.99)</td>
-      <td>0.85<br>(0.73 0.99)</td>
-      <td>0.90<br>(0.83 0.98)</td>
-      <td>0.92<br>(0.89 0.96)</td>
-      <td>0.87<br>(0.83 0.93)</td>
-      <td>0.92<br>(0.93 0.92)</td>
-      <td>0.88<br>(0.97 0.81)</td>
+      <td>0.76<br>0.62 1.00</td>
+      <td>0.85<br>0.76 0.97</td>
+      <td>0.84<br>0.74 0.99</td>
+      <td>0.85<br>0.73 0.99</td>
+      <td>0.90<br>0.83 0.98</td>
+      <td>0.92<br>0.89 0.96</td>
+      <td>0.87<br>0.83 0.93</td>
+      <td>0.92<br>0.93 0.92</td>
+      <td>0.88<br>0.97 0.81</td>
     </tr>
   </tbody>
 </table>
 
-<center>Table 4. The precision, recall, F-score of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
+
+<center>Table 4. The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. </center>
