@@ -7,7 +7,7 @@
 | DivideMix | ResNet-50    | 74.59±0.55     | 717s           |
 | IDO       | ResNet-50    | **74.77±0.48** | **229s**       |
 
-<center>Table 1. The results of DivideMix and IDO. The experiment is conducted under the setting with pre-trained ResNet50, with SGD, lr = 2e-3, weight_decay = 1e-3, momentum=0.9, batch_size=64. One epoch has 1000 iterations, and 100 epochs are trained. We set stage 1 for 2 epochs, stage 2 for 98 epochs. The experiments use an A100 80G GPU, running for 5 times.</center>
+Table 1. The results of DivideMix and IDO. The experiment is conducted under the setting with pre-trained ResNet50, with SGD, lr = 2e-3, weight_decay = 1e-3, momentum=0.9, batch_size=64. One epoch has 1000 iterations, and 100 epochs are trained. We set stage 1 for 2 epochs, stage 2 for 98 epochs. The experiments use an A100 80G GPU, running for 5 times.
 
 ### Table 2
 | Noise     | Architecture   | Sym. 20%     | Sym. 40%     | Sym. 60%     | Asym. 40%    | Inst. 40%    |
@@ -20,5 +20,5 @@
 | DISC      | ResNet-50      | 96.8%        | 96.5%        | 95.5%        | 95.1%        | **96.5%**    |
 | IDO       | ResNet-50      | **97.3%**    | **96.9%**    | **96.5%**    | **95.3%**    | 96.4% |
 
-<center>Table 2. The results of Standard, UNICON, ELR, DeFT, DivideMix, DISC and IDO on CIFAR-10 with five different noise levels. The experiment setting is followed CIFAR-100 setting in our paper.</center>
+Table 2. The results of Standard, UNICON, ELR, DeFT, DivideMix, DISC and IDO on CIFAR-10 with five different noise levels. The experiment setting is followed CIFAR-100 setting in our paper.
 
