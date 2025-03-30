@@ -9,6 +9,7 @@
       <th colspan="3">0.2</th>
       <th colspan="3">0.5</th>
       <th colspan="3">0.8</th>
+      <th rowspan="3">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -23,6 +24,9 @@
       <td>5</td>
       <td>20</td>
       <td>30</td>
+      <td rowspan="3">
+        The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. <br>The experiment is conducted with ResNet18 on CIFAR10 under Inst. 40%. We set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
+      </td>
     </tr>
     <tr>
       <td>Loss</td>
@@ -51,7 +55,6 @@
   </tbody>
 </table>
 
-Table 1. The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. The experiment is conducted with ResNet18 on CIFAR10 under Inst. 40%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
 
 ### Table 2
 
@@ -62,6 +65,7 @@ Table 1. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
       <th colspan="3">0.2</th>
       <th colspan="3">0.5</th>
       <th colspan="3">0.8</th>
+      <th rowspan="3">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -76,6 +80,9 @@ Table 1. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
       <td>10</td>
       <td>30</td>
       <td>60</td>
+      <td rowspan="3">
+        The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. <br> The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%. We set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
+      </td>
     </tr>
     <tr>
       <td>Loss</td>
@@ -104,8 +111,6 @@ Table 1. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
   </tbody>
 </table>
 
-Table 2. The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
-
 ### Table 3
 
 <table border="1" cellspacing="0" cellpadding="5">
@@ -115,6 +120,7 @@ Table 2. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
       <th colspan="3">Sym. 60%</th>
       <th colspan="3">Asym. 40%</th>
       <th colspan="3">Inst. 40%</th>
+      <th rowspan="3">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -129,6 +135,9 @@ Table 2. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
       <td>20</td>
       <td>60</td>
       <td>100</td>
+      <td rowspan="3">
+        The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%, Asym. 40%, Inst. 40%. <br> We use the metric AUC, which comprehensively considers accuracy, precision, and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. <br> It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
+      </td>
     </tr>
     <tr>
       <td>Loss</td>
@@ -157,7 +166,6 @@ Table 2. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
   </tbody>
 </table>
 
-Table 3. The AUC values of Loss and Wrong Event. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%, Asym. 40%, Inst. 40%. We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
 
 ### Figure 1
 
@@ -180,6 +188,7 @@ Table 3. The AUC values of Loss and Wrong Event. The experiment is conducted wit
       <th>Accuracy(%)</th>
       <th>Per Epoch Time(s)</th>
       <th>Per Epoch BMM Time(s)</th>
+      <th rowspan="2">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -188,11 +197,13 @@ Table 3. The AUC values of Loss and Wrong Event. The experiment is conducted wit
       <td>83.6</td>
       <td>121</td>
       <td>4.6</td>
+      <td rowspan="2">
+        The results of IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. <br>The experiment was performed on a single A100 80GB, repeated 5 times.
+      </td>
     </tr>
   </tbody>
 </table>
 
-Table 4. The results of IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.  The experiment was performed on a single A100 80GB, repeated 5 times. 
 
 ### Table 5
 
@@ -203,6 +214,7 @@ Table 4. The results of IDO(BMM). The experiment is conducted under the setting 
       <th>Accuracy(%)</th>
       <th>Per Epoch Time(s)</th>
       <th>Per Epoch Fitting Time(s)</th>
+      <th rowspan="4">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -211,6 +223,9 @@ Table 4. The results of IDO(BMM). The experiment is conducted under the setting 
       <td>78.9</td>
       <td>399</td>
       <td>14.7</td>
+      <td rowspan="4">
+        The results of M-Correction(BMM), DivideMix(GMM), and IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, using AdamW, lr = 1e-3, weight_decay = 1e-5, and batch_size=64. <br>The experiment was performed on a single A100 80GB, repeated 5 times.
+      </td>
     </tr>
     <tr>
       <td>DivideMix(GMM)</td>
@@ -226,8 +241,6 @@ Table 4. The results of IDO(BMM). The experiment is conducted under the setting 
     </tr>
   </tbody>
 </table>
-
-Table 5. The results of M-Correction(BMM), DivideMix(GMM), IDO(BMM). The experiment is conducted under the setting with ResNet50 on CIFAR-100 with Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. The experiment was performed on a single A100 80GB, repeated 5 times. 
 
 
 
