@@ -104,7 +104,6 @@ Table 1. The precision, recall, F-score of Loss and Wrong Event. Each cell displ
   </tbody>
 </table>
 
-
 Table 2. The precision, recall, F-score of Loss and Wrong Event. Each cell displays the F-score as the first value, precision as the second value, and recall as the third value. The experiment is conducted with ResNet18 on CIFAR10 under Sym. 60%. we set three thresholds to calculate F-score. It is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128.
 
 ### Table 3
