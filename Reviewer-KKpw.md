@@ -4,11 +4,10 @@
 
 <div>			
     <center>	
-    <img src="e67b724c167931bb78a7946a9b4afcc.png"
+    <img src="Reviewer-KKpw/a2c3b9883b07b5f16ff8d4559b98b0c.png"
          alt=""
          style=""/>
     <br>		
-    Figure 1. The results of Ranks Changes Extremes of Loss and Wrong Event. The experiment is conducted under the setting with ResNet18 on CIFAR-10 with Sym. 60%. By sorting samples based on metrics, we can better understand how loss and WE evolve, avoiding unfair comparisons due to numerical size differences. The experiment is conducted with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64. 
     </center>
 </div>
 
@@ -71,9 +70,14 @@
 
 ### Figure 2
 
-![image-20250329160530629](image-20250329160530629.png)
-
-Figure 2. The AUC-ROC curves of loss and wrong event at early, midterm, later training stages, i.e., 5 epochs, 15 epochs, 25 epochs. The experiment is conducted under the setting with pretrained ResNet18 on CIFAR-10 Inst. 40% noise.The AUC-ROC (Area Under the Receiver Operating Characteristic Curve) metric evaluates the classifier's ability to distinguish between classes. A higher AUC value indicates better classification performance, as it balances the trade-off between true positive rate (recall) and false positive rate across various thresholds. The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. 
+<div>			
+    <center>	
+    <img src="Reviewer-KKpw/2b6a2a51caa5e7d32c13231ae567642.png"
+         alt=""
+         style=""/>
+    <br>		
+    </center>
+</div>
 
 ### Table 2
 
