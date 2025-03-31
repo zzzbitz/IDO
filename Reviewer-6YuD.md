@@ -9,7 +9,7 @@
       <th colspan="3">Sym. 60%</th>
       <th colspan="3">Asym. 40%</th>
       <th colspan="3">Inst. 40%</th>
-      <th rowspan="3">Description</th>
+      <th rowspan="3">Implementation Details</th>
     </tr>
   </thead>
   <tbody>
@@ -65,7 +65,7 @@
       <th colspan="3">Sym. 60%</th>
       <th colspan="3">Asym. 40%</th>
       <th colspan="3">Inst. 40%</th>
-      <th rowspan="4">Description</th>
+      <th rowspan="4">Implementation Details</th>
     </tr>
   </thead>
   <tbody>
