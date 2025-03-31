@@ -148,7 +148,11 @@
       <td>77.1</td>
       <td>83.3</td>
       <td rowspan="2">
-        The results of Initial Model and Base Model. <br>The experiment is conducted under the setting with ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+        The results of Initial Model and Base Model. <br>
+        The experiment is conducted under the setting <br>
+          with ResNet-50 on CIFAR-100 with Sym. 60%, <br>
+          Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, <br>
+          weight_decay = 1e-5, batch_size=64.
       </td>
     </tr>
     <tr>
@@ -180,7 +184,11 @@
       <td>70.4</td>
       <td>77.3</td>
       <td rowspan="3">
-        The results of weighting term $$\epsilon(\cdot)$$ for loss $$\mathcal{L_{SIM}}$$. <br> The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+        The results of weighting term $$\epsilon(\cdot)$$ for loss $$\mathcal{L_{SIM}}$$. <br> 
+          The experiment is conducted under the setting <br>
+          with Pretrained ResNet-50 on CIFAR-100 with <br>
+          Sym. 60%, Asym. 40%, Inst. 40% noise, with <br>
+          AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
       </td>
     </tr>
     <tr>
@@ -218,7 +226,10 @@
       <td>69.9</td>
       <td>74.6</td>
       <td rowspan="4">
-        The results of loss and wrong event with Total BMM and Class BMM. <br>The experiment is conducted under the setting with Pretrained ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+        The results of loss and wrong event with Total Class BMM. <br>
+        The experiment is conducted under the setting with Pretrained <br>
+        ResNet-50 on CIFAR-100 with Sym. 60%, Asym. 40%, Inst. 40% noise,<br>
+          with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
       </td>
     </tr>
     <tr>
