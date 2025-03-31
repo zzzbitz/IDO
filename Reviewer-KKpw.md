@@ -96,9 +96,9 @@
   <tbody>
     <tr>
       <td>Single Loss + BMM</td>
-      <td>75.3</td>
-      <td>69.7</td>
-      <td>68.4</td>
+      <td>78.2</td>
+      <td>72.9</td>
+      <td>74.6</td>
       <td rowspan="4">
         The results of single loss, accumulated loss and wrong event <br>
         with GMM and BMM. The experiment is conducted under the <br>
@@ -222,9 +222,9 @@
   <tbody>
     <tr>
       <td>Loss + Total BMM</td>
-      <td>79.9</td>
-      <td>69.9</td>
-      <td>74.6</td>
+      <td>76.3</td>
+      <td>69.7</td>
+      <td>68.4</td>
       <td rowspan="4">
         The results of loss and wrong event with Total Class BMM. <br>
         The experiment is conducted under the setting with Pretrained <br>
@@ -234,9 +234,9 @@
     </tr>
     <tr>
       <td>Loss + Class BMM</td>
-      <td>80.8</td>
-      <td>76.0</td>
-      <td>79.8</td>
+      <td>78.2</td>
+      <td>72.9</td>
+      <td>74.6</td>
     </tr>
     <tr>
       <td>Wrong event + Total BMM</td>
