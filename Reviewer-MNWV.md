@@ -9,7 +9,7 @@
       <th>Architecture</th>
       <th>Accuracy±std</th>
       <th>Time per Epoch</th>
-      <th rowspan="3">Description</th>
+      <th rowspan="3">Implementation Details</th>
     </tr>
   </thead>
   <tbody>
@@ -44,7 +44,7 @@
       <th>Sym. 60%</th>
       <th>Asym. 40%</th>
       <th>Inst. 40%</th>
-      <th rowspan="8">Description</th>
+      <th rowspan="8">Implementation Details</th>
     </tr>
   </thead>
   <tbody>
