@@ -94,7 +94,7 @@
   <tbody>
     <tr>
       <td>Single Loss + BMM</td>
-      <td>75.2</td>
+      <td>78.2</td>
       <td>72.9</td>
       <td>74.6</td>
       <td rowspan="4">
@@ -217,7 +217,7 @@
     </tr>
     <tr>
       <td>Loss + Class BMM</td>
-      <td>75.2</td>
+      <td>78.2</td>
       <td>72.9</td>
       <td>74.6</td>
     </tr>
