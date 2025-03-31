@@ -37,7 +37,9 @@
       <td>15</td>
       <td>25</td>
       <td rowspan="4">
-        The AUC values of Loss and Wrong Event. The experiment is conducted under the setting with pre-trained ResNet50 on CIFAR-100 under three noise settings. <br> We use the metric AUC which comprehensively considered accuracy, precision and recall, to measure the selecting ability of selective metrics at different thresholds. The larger the AUC, the stronger the classification ability of the metric. <br> The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. 
+        The AUC values of Loss and Wrong Event. <br>
+        The experiment is conducted under the setting with pre-trained ResNet50 on CIFAR-100 under three noise settings. <br> 
+        The experiment is conducted with SGD, lr = 1e-2, weight_decay = 5e-4, batch_size=128. 
       </td>
     </tr>
     <tr>
@@ -98,7 +100,11 @@
       <td>69.7</td>
       <td>68.4</td>
       <td rowspan="4">
-        The results of single loss, accumulated loss and wrong event with GMM and BMM. <br>The experiment is conducted under the setting with ResNet-18 on CIFAR-10 with Sym. 60%, Asym. 40%, Inst. 40% noise, with AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
+        The results of single loss, accumulated loss and wrong event <br>
+        with GMM and BMM. The experiment is conducted under the <br>
+          setting with ResNet-18 on CIFAR-10 with <br>
+          Sym. 60%, Asym. 40%, Inst. 40% noise, with <br>
+          AdamW, lr = 1e-3, weight_decay = 1e-5, batch_size=64.
       </td>
     </tr>
     <tr>
